@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="SecurityQuickStart.war">
+    <root id="archive" name="SecurityQuickStart-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="SecurityQuickStart:war exploded" />
     </root>
   </artifact>
