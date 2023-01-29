@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SecurityQuickStart:war">
+    <output-path>$PROJECT_DIR$/SecurityQuickStart/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>SecurityQuickStart</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="SecurityQuickStart.war">
+      <element id="artifact" artifact-name="SecurityQuickStart:war exploded" />
+    </root>
+  </artifact>
+</component>
