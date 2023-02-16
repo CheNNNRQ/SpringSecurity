@@ -1,6 +1,13 @@
+server:
+  port: 8888
 spring:
   datasource:
-    url: jdbc:mysql://192.169.124.45:3306/sg_security?characterEncoding=utf-8&serverTimezone=UTC
+    url: jdbc:mysql://192.168.124.45:3306/spring_security?characterEncoding=utf-8&serverTimezone=UTC
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: 192.168.124.45
+    password:
+    port: 6954
+    timeout: 15000
