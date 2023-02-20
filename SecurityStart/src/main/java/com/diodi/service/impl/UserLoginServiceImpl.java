@@ -10,6 +10,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Objects;
 
 /**
@@ -30,7 +32,10 @@ public class UserLoginServiceImpl implements UserDetailsService {
             throw new RuntimeException("用户不存在");
         }
         //Todo: 返回权限信息
-
-        return new UserLogin(user);
+        ArrayList<String> permissions = new ArrayList<>(Arrays.asList("test"));
+        UserLogin userLogin = new UserLogin();
+        userLogin.setUser(user);
+        userLogin.setPermissions(permissions);
+        return userLogin;
     }
 }
